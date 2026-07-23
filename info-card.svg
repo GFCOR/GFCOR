@@ -21,7 +21,7 @@
   <g class="row-item" style="animation-delay: 0.15s;">
     <text x="24" y="104" class="key" fill="#58a6ff">OS         </text>
     <text x="125" y="104" class="sep">~&gt;</text>
-    <text x="150" y="104" class="val">GitHub Linux x86_64</text>
+    <text x="150" y="104" class="val">Linux / Windows 11</text>
   </g>
   <g class="row-item" style="animation-delay: 0.22s;">
     <text x="24" y="130" class="key" fill="#8b949e">Host       </text>
@@ -41,7 +41,7 @@
   <g class="row-item" style="animation-delay: 0.43s;">
     <text x="24" y="208" class="key" fill="#d2a8ff">Languages  </text>
     <text x="125" y="208" class="sep">~&gt;</text>
-    <text x="150" y="208" class="val">Python, C++, TypeScript, SQL, Bash</text>
+    <text x="150" y="208" class="val">Python, C++, SQL, Bash</text>
   </g>
   <g class="row-item" style="animation-delay: 0.5s;">
     <text x="24" y="234" class="key" fill="#79c0ff">Frameworks </text>
@@ -51,7 +51,7 @@
   <g class="row-item" style="animation-delay: 0.57s;">
     <text x="24" y="260" class="key" fill="#ff7b72">Focus      </text>
     <text x="125" y="260" class="sep">~&gt;</text>
-    <text x="150" y="260" class="val">AI Agents, Software Engineering &amp; Systems</text>
+    <text x="150" y="260" class="val">Prompt Engineering, AI Agents &amp; Systems</text>
   </g>
   <g class="row-item" style="animation-delay: 0.64s;">
     <text x="24" y="286" class="key" fill="#a5d6ff">Location   </text>
