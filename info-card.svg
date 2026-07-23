@@ -41,7 +41,7 @@
   <g class="row-item" style="animation-delay: 0.43s;">
     <text x="24" y="208" class="key" fill="#d2a8ff">Languages  </text>
     <text x="125" y="208" class="sep">~&gt;</text>
-    <text x="150" y="208" class="val">Python, C++, SQL, Bash</text>
+    <text x="150" y="208" class="val">Python, C++, SQL, Bash, R, Matlab, PowerShell, Vim</text>
   </g>
   <g class="row-item" style="animation-delay: 0.5s;">
     <text x="24" y="234" class="key" fill="#79c0ff">Frameworks </text>
