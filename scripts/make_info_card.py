@@ -1,5 +1,6 @@
 import sys
 import os
+import xml.sax.saxutils as xml_utils
 
 def generate_info_card(output_svg="info-card.svg"):
     width = 490
@@ -8,12 +9,12 @@ def generate_info_card(output_svg="info-card.svg"):
     rows = [
         ("OS", "GitHub Linux x86_64", "#58a6ff"),
         ("Host", "Profile README v2.0", "#8b949e"),
-        ("Role", "Software Engineer & AI Builder", "#7ee787"),
-        ("Languages", "Python, TypeScript, C++, SQL, Bash", "#ffa657"),
-        ("Frameworks", "React, Next.js, Node.js, PyTorch", "#d2a8ff"),
-        ("Focus", "Autonomous AI Agents & Fullstack Web", "#79c0ff"),
-        ("Tools", "Git, Docker, Linux, Neovim, Tailwind", "#ff7b72"),
-        ("Location", "Colombia / Remote", "#a5d6ff"),
+        ("Role", "Computer Science Student & AI Developer", "#7ee787"),
+        ("University", "UTEC (Universidad de Ingeniería y Tecnología)", "#ffa657"),
+        ("Languages", "Python, C++, TypeScript, SQL, Bash", "#d2a8ff"),
+        ("Frameworks", "React, Next.js, Node.js, PyTorch", "#79c0ff"),
+        ("Focus", "AI Agents, Software Engineering & Systems", "#ff7b72"),
+        ("Location", "Peru / Remote", "#a5d6ff"),
     ]
     
     palette_colors = [
@@ -25,7 +26,7 @@ def generate_info_card(output_svg="info-card.svg"):
     svg.append(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="{width}" height="{height}">')
     svg.append('  <style>')
     svg.append('    .term-header { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; font-weight: 600; fill: #8b949e; }')
-    svg.append('    .key { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12.5px; font-weight: bold; fill: #58a6ff; }')
+    svg.append('    .key { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12.5px; font-weight: bold; }')
     svg.append('    .val { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12.5px; fill: #c9d1d9; }')
     svg.append('    .sep { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12.5px; fill: #484f58; }')
     svg.append('    .title-user { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 14px; font-weight: bold; fill: #7ee787; }')
@@ -40,12 +41,12 @@ def generate_info_card(output_svg="info-card.svg"):
     svg.append('  <circle cx="20" cy="20" r="6" fill="#ff5f56" />')
     svg.append('  <circle cx="40" cy="20" r="6" fill="#ffbd2e" />')
     svg.append('  <circle cx="60" cy="20" r="6" fill="#27c93f" />')
-    svg.append('  <text x="80" y="24" class="term-header">gfcor@github: ~ (neofetch)</text>')
+    svg.append('  <text x="80" y="24" class="term-header">GFCOR@github: ~ (neofetch)</text>')
     svg.append('  <line x1="0" y1="38" x2="490" y2="38" stroke="#21262d" stroke-width="1" />')
     
     # Content Title
     svg.append('  <g class="row-item" style="animation-delay: 0.1s;">')
-    svg.append('    <text x="24" y="66" class="title-user">gfcor@github</text>')
+    svg.append('    <text x="24" y="66" class="title-user">GFCOR@github</text>')
     svg.append('    <text x="24" y="78" class="val">----------------------------------------</text>')
     svg.append('  </g>')
     
@@ -54,16 +55,17 @@ def generate_info_card(output_svg="info-card.svg"):
     y_step = 26
     for idx, (k, v, color) in enumerate(rows):
         y_pos = y_start + idx * y_step
-        delay = round(0.2 + idx * 0.08, 2)
+        delay = round(0.15 + idx * 0.07, 2)
+        v_escaped = xml_utils.escape(v)
         svg.append(f'  <g class="row-item" style="animation-delay: {delay}s;">')
         svg.append(f'    <text x="24" y="{y_pos}" class="key" fill="{color}">{k:<11}</text>')
-        svg.append(f'    <text x="120" y="{y_pos}" class="sep">:&lt;</text>')
-        svg.append(f'    <text x="145" y="{y_pos}" class="val">{v}</text>')
+        svg.append(f'    <text x="125" y="{y_pos}" class="sep">~&gt;</text>')
+        svg.append(f'    <text x="150" y="{y_pos}" class="val">{v_escaped}</text>')
         svg.append('  </g>')
         
     # Color palette circles at bottom
     y_palette = y_start + len(rows) * y_step + 18
-    delay = round(0.2 + len(rows) * 0.08, 2)
+    delay = round(0.15 + len(rows) * 0.07, 2)
     svg.append(f'  <g class="row-item" style="animation-delay: {delay}s;">')
     for i, c in enumerate(palette_colors):
         cx = 24 + i * 22
