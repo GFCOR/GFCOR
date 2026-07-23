@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 360" width="490" height="360">
+  <style>
+    .term-header { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; font-weight: 600; fill: #8b949e; }
+    .key { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12.5px; font-weight: bold; fill: #58a6ff; }
+    .val { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12.5px; fill: #c9d1d9; }
+    .sep { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12.5px; fill: #484f58; }
+    .title-user { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 14px; font-weight: bold; fill: #7ee787; }
+    .row-item { opacity: 0; animation: fadeInRow 0.4s forwards; }
+    @keyframes fadeInRow { to { opacity: 1; transform: translateY(0); } }
+  </style>
+  <rect width="490" height="360" fill="#0d1117" stroke="#30363d" stroke-width="1" rx="8" />
+  <circle cx="20" cy="20" r="6" fill="#ff5f56" />
+  <circle cx="40" cy="20" r="6" fill="#ffbd2e" />
+  <circle cx="60" cy="20" r="6" fill="#27c93f" />
+  <text x="80" y="24" class="term-header">gfcor@github: ~ (neofetch)</text>
+  <line x1="0" y1="38" x2="490" y2="38" stroke="#21262d" stroke-width="1" />
+  <g class="row-item" style="animation-delay: 0.1s;">
+    <text x="24" y="66" class="title-user">gfcor@github</text>
+    <text x="24" y="78" class="val">----------------------------------------</text>
+  </g>
+  <g class="row-item" style="animation-delay: 0.2s;">
+    <text x="24" y="104" class="key" fill="#58a6ff">OS         </text>
+    <text x="120" y="104" class="sep">:&lt;</text>
+    <text x="145" y="104" class="val">GitHub Linux x86_64</text>
+  </g>
+  <g class="row-item" style="animation-delay: 0.28s;">
+    <text x="24" y="130" class="key" fill="#8b949e">Host       </text>
+    <text x="120" y="130" class="sep">:&lt;</text>
+    <text x="145" y="130" class="val">Profile README v2.0</text>
+  </g>
+  <g class="row-item" style="animation-delay: 0.36s;">
+    <text x="24" y="156" class="key" fill="#7ee787">Role       </text>
+    <text x="120" y="156" class="sep">:&lt;</text>
+    <text x="145" y="156" class="val">Software Engineer & AI Builder</text>
+  </g>
+  <g class="row-item" style="animation-delay: 0.44s;">
+    <text x="24" y="182" class="key" fill="#ffa657">Languages  </text>
+    <text x="120" y="182" class="sep">:&lt;</text>
+    <text x="145" y="182" class="val">Python, TypeScript, C++, SQL, Bash</text>
+  </g>
+  <g class="row-item" style="animation-delay: 0.52s;">
+    <text x="24" y="208" class="key" fill="#d2a8ff">Frameworks </text>
+    <text x="120" y="208" class="sep">:&lt;</text>
+    <text x="145" y="208" class="val">React, Next.js, Node.js, PyTorch</text>
+  </g>
+  <g class="row-item" style="animation-delay: 0.6s;">
+    <text x="24" y="234" class="key" fill="#79c0ff">Focus      </text>
+    <text x="120" y="234" class="sep">:&lt;</text>
+    <text x="145" y="234" class="val">Autonomous AI Agents & Fullstack Web</text>
+  </g>
+  <g class="row-item" style="animation-delay: 0.68s;">
+    <text x="24" y="260" class="key" fill="#ff7b72">Tools      </text>
+    <text x="120" y="260" class="sep">:&lt;</text>
+    <text x="145" y="260" class="val">Git, Docker, Linux, Neovim, Tailwind</text>
+  </g>
+  <g class="row-item" style="animation-delay: 0.76s;">
+    <text x="24" y="286" class="key" fill="#a5d6ff">Location   </text>
+    <text x="120" y="286" class="sep">:&lt;</text>
+    <text x="145" y="286" class="val">Colombia / Remote</text>
+  </g>
+  <g class="row-item" style="animation-delay: 0.84s;">
+    <circle cx="24" cy="330" r="7" fill="#484f58" />
+    <circle cx="46" cy="330" r="7" fill="#ff7b72" />
+    <circle cx="68" cy="330" r="7" fill="#7ee787" />
+    <circle cx="90" cy="330" r="7" fill="#ffa657" />
+    <circle cx="112" cy="330" r="7" fill="#79c0ff" />
+    <circle cx="134" cy="330" r="7" fill="#d2a8ff" />
+    <circle cx="156" cy="330" r="7" fill="#a5d6ff" />
+    <circle cx="178" cy="330" r="7" fill="#f0f6fc" />
+  </g>
+</svg>
