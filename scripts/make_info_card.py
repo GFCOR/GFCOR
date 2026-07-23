@@ -11,9 +11,9 @@ def generate_info_card(output_svg="info-card.svg"):
         ("Host", "Profile README v2.0", "#8b949e"),
         ("Role", "Computer Science Student & AI Developer", "#7ee787"),
         ("University", "UTEC (Universidad de Ingeniería y Tecnología)", "#ffa657"),
-        ("Languages", "Python, C++, TypeScript, SQL, Bash", "#d2a8ff"),
+        ("Languages", "Python, C++, Autodesk, SQL, Bash", "#d2a8ff"),
         ("Frameworks", "React, Next.js, Node.js, PyTorch", "#79c0ff"),
-        ("Focus", "AI Agents, Software Engineering & Systems", "#ff7b72"),
+        ("Focus", "AI Agents,Prompt Engineering, Software Engineering & Systems", "#ff7b72"),
         ("Location", "Peru / Remote", "#a5d6ff"),
     ]
     
